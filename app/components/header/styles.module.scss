@@ -1,15 +1,18 @@
-@import "../../styles/main";
+@import "@/app/styles/main";
 
 .header {
   @include flex-space-betwwen;
   padding: 20px;
+  border-bottom: 2px solid $accent-color;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .logo a {
-  color: #fff;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
 

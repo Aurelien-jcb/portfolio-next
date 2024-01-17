@@ -1,7 +1,11 @@
 export const siteInformations = {
   id: "410544b2-4001-4271-9855-fec4b6a6442a",
   name: "Aurélien Jacob",
-  availibility: "Disponible / Available now /",
+  availibility: {
+    available: 'Disponible / Available now /',
+    notAvailable: 'Indisponible / Not available for now /',
+    status: true,
+  },
   navigation: [
     { id: 1, url: "#projects", label: "projects" },
     { id: 2, url: "#about", label: "about" },

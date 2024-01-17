@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./style.module.scss";
+import styles from "./styles.module.scss";
 import { NavLink } from "@/app/lib/definitions";
 
 interface NavLinksProps {
@@ -8,7 +8,6 @@ interface NavLinksProps {
 
 const NavLinks: React.FC<NavLinksProps> = ({ links }) => {
   if (!links.length) {
-    console.error("Missing navigation data in props");
     return null;
   }
 

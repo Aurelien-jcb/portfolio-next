@@ -1,4 +1,5 @@
 $primary-color: #ffffff;
+$alert-color: #c70303;
 $accent-color: #00FF7F;
 $background-color: #08122F;
  
@@ -6,4 +7,5 @@ $background-color: #08122F;
   primaryColor: $primary-color;
   accentColor: $accent-color;
   backgroundColor: $background-color;
+  alertColor: $alert-color;
 }

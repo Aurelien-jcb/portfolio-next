@@ -1,0 +1,46 @@
+@import "@/app/styles/main";
+
+.wrapper {
+  @include flex-center;
+  span {
+    width: 14px;
+    height: 14px;
+    background-color: $accent-color;
+    display: inline-block;
+    border-radius: 50px;
+  }
+  .notAvailable {
+     background-color: $alert-color;
+   }
+  .marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.5rem;
+    margin-inline: 13px;
+    max-width: 22rem;
+    position: relative;
+    cursor: pointer;
+    .marqueeText {
+        text-transform: uppercase;
+      margin-left: 5px;
+      display: inline-block;
+      will-change: transform;
+      -webkit-animation: marquee 5s linear infinite;
+      animation: marquee 5s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-100%, 0);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    display: none;
+  }
+}

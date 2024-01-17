@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "@/app/styles/globals.scss";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "./components/header";
+import { kinship } from "./lib/fonts";
 
 export const metadata: Metadata = {
   title: "Aurélien Jacob",
@@ -16,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={kinship.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
