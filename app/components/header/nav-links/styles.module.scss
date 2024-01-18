@@ -1,14 +1,52 @@
-.nav ul {
-  list-style: none;
-  display: flex;
-}
+@import "@/app/styles/main";
 
-.nav li {
-  margin-right: 20px;
-}
-
-.nav a {
-  text-decoration: none;
+.wrapper {
+  nav {
+    box-shadow: 0 0 10px #030303;
+    text-align: center;
+    flex-direction: column;
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    top: 0;
+    margin: auto 0;
+    right: 0;
+    padding: 50px 0 0 0;
+    background-color: $accent-color;
+    transition: all 0.3s linear;
     text-transform: uppercase;
-  font-size: 1rem;
+    transform: translate(100%);
+    z-index: 5;
+    ul {
+      list-style: none;
+      @include flex-column-center;
+      li {
+        margin-top: 10rem;
+        color: $secondary-color;
+      }
+    }
+  }
+  .openedMenu {
+    transform: translate(0%);
+  }
+}
+
+@include respond-to(xl, min) {
+  .wrapper {
+    nav {
+      transform: translate(0%);
+      box-shadow: none;
+      position: relative;
+      padding: 0;
+      background-color: transparent;
+      ul {
+        @include flex-row-center;
+        li {
+          color: $primary-color;
+          margin: 0px;
+          padding-left: 2rem;
+        }
+      }
+    }
+  }
 }

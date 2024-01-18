@@ -1,25 +1,31 @@
-'use client';
+"use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./styles.module.scss";
 import { siteInformations } from "@/app/lib/data";
 import NavLinks from "./nav-links";
 import MarqueeBanner from "./marquee-banner";
+import BurgerButton from "./burger-button";
 import { useScrollEffect } from "@/app/lib/utils/useScrollEffect";
 import { useGetInitials } from "@/app/lib/utils/useGetInitials";
 
 const Header = () => {
- const [scrolling, setScrolling] = useState(false);
- useScrollEffect(setScrolling);
- const initials = useGetInitials(siteInformations.name);
+  const [userIsScrolling, setUserIsScrolling] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useScrollEffect(setUserIsScrolling);
+  const nameInitials = useGetInitials(siteInformations.name);
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link href="/">{scrolling ? initials:  siteInformations.name}</Link>
+        <Link href="/">
+          {userIsScrolling ? nameInitials : siteInformations.name}
+        </Link>
       </div>
       <MarqueeBanner availibility={siteInformations.availibility} />
-      <NavLinks links={siteInformations.navigation} />
+      <NavLinks links={siteInformations.navigation} status={isOpen} />
+      <BurgerButton status={isOpen} action={() => setIsOpen(!isOpen)} />
     </header>
   );
 };

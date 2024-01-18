@@ -1,0 +1,59 @@
+@import "@/app/styles/main";
+
+.toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  path {
+    fill: none;
+    stroke: $accent-color;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .toggle:focus {
+    outline: none;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  @include respond-to(xl, min) {
+    display: none;
+  }
+}
+
+.opened {
+  path {
+    stroke: $secondary-color;
+  }
+  .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+}
