@@ -1,8 +1,8 @@
 @import "@/app/styles/main";
 
 .header {
-  @include flex-space-betwen;
-  padding: 30px 80px;
+  @include flex-center-space-betwen;
+  padding: 10px 30px;
   border-bottom: 2px solid $accent-color;
   position: -webkit-sticky;
   position: sticky;
@@ -11,12 +11,12 @@
     width: 230px;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
-  @include respond-to(sm, max) {
-    padding: 10px 30px;
+  @include respond-to(md, min) {
+    padding: 30px 80px;
     .logo {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 }

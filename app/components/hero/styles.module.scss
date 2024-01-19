@@ -1,0 +1,36 @@
+@import "@/app/styles/main";
+
+.hero {
+  color: $accent-color;
+  text-transform: uppercase;
+  padding-inline: 30px;
+  min-height: 85vh;
+  position: relative;
+  @include flex-end-column-center-start;
+  h1 {
+    font-size: 2.7rem;
+    max-width: 748px;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .icon {
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+  }
+  @include respond-to(md, min) {
+    min-height: 100vh;
+    padding-inline: 80px;
+    justify-content: center;
+    h1 {
+      font-size: 7rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+    .icon {
+        bottom: 80px;
+    }
+  }
+}

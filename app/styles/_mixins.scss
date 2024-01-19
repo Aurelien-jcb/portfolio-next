@@ -17,7 +17,14 @@
   flex-direction: column;
 }
 
-@mixin flex-space-betwen {
+@mixin flex-end-column-center-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+@mixin flex-center-space-betwen {
   display: flex;
   justify-content: space-between;
   align-items: center;
