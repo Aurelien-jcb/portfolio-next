@@ -24,10 +24,16 @@
   align-items: flex-start;
 }
 
-@mixin flex-center-space-betwen {
+@mixin flex-center-space-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin flex-start-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 @mixin respond-to($breakpoint, $type: min) {

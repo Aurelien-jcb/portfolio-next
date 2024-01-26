@@ -1,16 +1,13 @@
-import Image from "next/image";
-import styles from "./styles.module.scss";
 import { klavikaBold, klavikaLight } from "@/app/lib/fonts";
-import { chevronBottomIcon } from "@/app/lib/icons";
+import { ScrollToNextSectionIcon } from "../shared/scroll-to-next-section-icon";
+import styles from "./styles.module.scss";
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <div className={styles.hero}>
       <h1 className={klavikaBold.className}>Independent Front-end developer</h1>
       <p className={klavikaLight.className}>From Lille, France</p>
-      <Image className={styles.icon} src={chevronBottomIcon} alt="Icon" width={57} height={40}/>
+      <ScrollToNextSectionIcon />{" "}
     </div>
   );
 };
-
-export default Hero;

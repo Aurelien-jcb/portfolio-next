@@ -1,0 +1,11 @@
+@import "@/app/styles/main";
+
+.button {
+  cursor: pointer;
+  background: none;
+  border-radius: 68px;
+  border: 4px solid $accent-color;
+  font-size: 1.8rem;
+  color: $accent-color;
+  padding: 20px 30px;
+}

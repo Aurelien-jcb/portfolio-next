@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
 import "@/app/styles/globals.scss";
+import type { Metadata } from "next";
 import Header from "./components/header";
 import { kinship } from "./lib/fonts";
 

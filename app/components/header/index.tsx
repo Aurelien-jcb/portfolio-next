@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
-import Link from "next/link";
-import styles from "./styles.module.scss";
 import { siteInformations } from "@/app/lib/data";
-import NavLinks from "./nav-links";
-import MarqueeBanner from "./marquee-banner";
-import BurgerButton from "./burger-button";
-import { useScrollEffect } from "@/app/lib/utils/useScrollEffect";
 import { useGetInitials } from "@/app/lib/utils/useGetInitials";
+import { useScrollEffect } from "@/app/lib/utils/useScrollEffect";
+import Link from "next/link";
+import { useState } from "react";
+import BurgerButton from "./burger-button";
+import MarqueeBanner from "./marquee-banner";
+import NavLinks from "./nav-links";
+import styles from "./styles.module.scss";
 
 const Header = () => {
   const [userIsScrolling, setUserIsScrolling] = useState(false);
@@ -16,6 +16,7 @@ const Header = () => {
 
   useScrollEffect(setUserIsScrolling);
   const nameInitials = useGetInitials(siteInformations.name);
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>

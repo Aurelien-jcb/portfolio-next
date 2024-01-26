@@ -1,0 +1,63 @@
+@import "@/app/styles/main";
+
+.wrapper {
+  height: 100vh;
+  padding: 100px 30px;
+  color: $accent-color;
+  .profil {
+    @include flex-column-center;
+    .leftSection {
+      width: 100%;
+      h3 {
+        font-size: 2.7rem;
+        text-align: left;
+        padding-bottom: 40px;
+        span {
+          border-bottom: 1px solid $accent-color;
+          line-height: 5px;
+        }
+      }
+      p {
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+      button {
+        float: right;
+      }
+    }
+    .rightSection {
+      width: 100%;
+      text-align: -webkit-right;
+      .profilePicture {
+        margin: 40px auto;
+        width: 270px;
+        height: auto;
+      }
+    }
+  }
+  @include respond-to(lg, min) {
+    padding: 20px 80px;
+    .profil {
+      @include flex-start-space-between;
+      flex-direction: row;
+      .leftSection {
+        width: 60%;
+        h3 {
+          font-size: 4rem;
+          text-align: center;
+        }
+        p {
+          font-size: 8rem;
+        }
+      }
+      .rightSection {
+        width: 40%;
+        text-align: -webkit-right;
+        .profilePicture {
+          margin: 0 50px 0 0;
+          width: 440px;
+        }
+      }
+    }
+  }
+}
