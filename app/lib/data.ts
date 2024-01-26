@@ -101,10 +101,14 @@ export const about = {
     url: "/profil-picture.png",
     alt: "Photo de profil",
   },
-  leftText:
-    "Passionate about creation and innovation, I made a career change to web development after several years in art framing. This transition, inspired by my love for art and my desire to create unique experiences, led me to front-end development.",
-  rightText:
-    "Together, we can create exceptional web experiences that will captivate your audience. My expertise in web performance optimization, accessibility and my proactive nature are at your service to turn your ideas into reality.",
+  leftText: [
+    "Passionate about creation and innovation, made a career change to web development after several years in art framing.",
+    "This transition, inspired by my love for art and my desire to create unique experiences, led me to front-end development.",
+  ],
+  rightText: [
+    "Together, we can create exceptional web experiences that will captivate your audience.",
+    "My expertise in web performance optimization, accessibility and my proactive nature are at your service to turn your ideas into reality.",
+  ],
   centerText: "Ready to turn your concepts into reality?",
 };
 
