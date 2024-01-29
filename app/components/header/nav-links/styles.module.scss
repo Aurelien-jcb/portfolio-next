@@ -41,6 +41,7 @@
       background-color: transparent;
       ul {
         @include flex-row-center;
+        justify-content: space-between;
         li {
           color: $primary-color;
           margin: 0px;

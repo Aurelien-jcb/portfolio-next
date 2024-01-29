@@ -3,8 +3,8 @@
 .header {
   @include flex-center-space-between;
   z-index: 10;
-  background: $background-color-transparent;
   padding: 10px 30px;
+  background-color: $background-color;
   border-bottom: 2px solid $accent-color;
   position: -webkit-sticky;
   position: sticky;
@@ -16,9 +16,13 @@
     font-size: 1rem;
   }
   @include respond-to(md, min) {
-    padding: 30px 80px;
+    padding: 6px 80px;
     .logo {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
+}
+
+.border {
+  border-bottom: none;
 }
