@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "precommit": "next lint && next build"
   },
   "dependencies": {
+    "@studio-freight/react-lenis": "^0.0.43",
+    "gsap": "^3.12.5",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"

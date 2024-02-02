@@ -1,11 +1,11 @@
-import Gallery from "@/app/components/projects/gallery";
+import ZoomParallaxGallery from "@/app/components/projects/zoom-parallax-gallery";
 
-const Users = () => {
+const Project = () => {
   return (
     <>
-      <Gallery/>
+      <ZoomParallaxGallery />
     </>
   );
 };
 
-export default Users;
+export default Project;
