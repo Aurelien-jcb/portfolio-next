@@ -12,7 +12,9 @@ const AboutSection = () => {
     <section className={styles.wrapper}>
       <Profil sectionRef={sectionRef}></Profil>
       <ScrollToNextSectionIcon />
+      {/* <ScrollSection> */}
       <Description sectionRef={sectionRef}></Description>
+      {/* </ScrollSection> */}
     </section>
   );
 };

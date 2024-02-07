@@ -6,9 +6,9 @@ interface MarqueeBannerProps {
 }
 
 const MarqueeBanner: React.FC<MarqueeBannerProps> = ({ availibility }) => {
-   const getClassName = () => {
-     return availibility.status ? "" : styles.notAvailable;
-   };
+  const getClassName = () => {
+    return availibility.status ? "" : styles.notAvailable;
+  };
   return (
     <div className={styles.wrapper}>
       <span className={getClassName()} />

@@ -1,4 +1,5 @@
+import chevronIcon from "./icon-chevron.svg";
+import fillStarIcon from "./star-fill.svg";
+import fullStarIcon from "./star-full.svg";
 
-import chevronBottomIcon from "./icon-chevron-bottom.svg";
-
-export { chevronBottomIcon };
+export { chevronIcon, fillStarIcon, fullStarIcon };

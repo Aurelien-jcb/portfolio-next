@@ -2,9 +2,9 @@
 
 .wrapper {
   height: 100vh;
-  padding: 100px 30px;
+  padding: 100px;
   color: $accent-color;
   @include respond-to(lg, min) {
-    padding: 20px 80px;
+    padding: 20px 0;
   }
 }
