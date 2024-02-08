@@ -1,6 +1,7 @@
 "use client";
 import { about } from "@/app/lib/data";
 import { klavikaBold, klavikaLight } from "@/app/lib/fonts";
+import { roundedFlower } from "@/app/lib/icons";
 import Image from "next/image";
 import Button from "../../shared/button";
 import styles from "./styles.module.scss";
@@ -22,6 +23,13 @@ export function Profil({
         {/* <h3 className={klavikaMedium.className}>{about.title}</h3> */}
         <Button scrollToRef={sectionRef}>{about.cta.label}</Button>
       </div>
+      <Image
+        className={styles.roundedFlower}
+        src={roundedFlower}
+        alt="RoundedFlower Image"
+        width={266}
+        height={266}
+      />
       <div className={styles.pictureWrapper}>
         <Image
           className={styles.picture}

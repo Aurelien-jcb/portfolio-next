@@ -9,12 +9,12 @@
   flex-direction: column-reverse;
   .wrapper {
     @include flex-end-column-center-start;
-  }
-
-  h1 {
-    font-size: 2.7rem;
-    line-height: 33px;
-    padding-top: 90px;
+    h1 {
+      font-size: 2.7rem;
+      line-height: 33px;
+      padding-top: 90px;
+      width: 100%;
+    }
   }
 
   .chevronIcon {
@@ -33,20 +33,33 @@
   }
 
   .glass {
-    width: 290px;
+    width: 100%;
     height: auto;
     margin-top: 40px;
   }
-
+  .socialIcon {
+    position: fixed;
+    bottom: 34px;
+    .instagramIcon {
+      margin-right: 10px;
+    }
+  }
+  @include respond-to(md, min) {
+    .glass {
+      width: 80%;
+    }
+  }
   @include respond-to(lg, min) {
     min-height: 90dvh;
     @include flex-row-center;
-    h1 {
-      font-size: 6rem;
-      line-height: 67px;
-      max-width: 748px;
-    }
     justify-content: space-between;
+    .wrapper {
+      h1 {
+        font-size: 6rem;
+        line-height: 70px;
+        width: 90%;
+      }
+    }
     .fillStar {
       right: -80px;
     }
@@ -54,8 +67,8 @@
       bottom: 0;
     }
     .glass {
-      width: 400px;
-      height: auto;
+      width: 50%;
+      z-index: 10;
     }
   }
 }

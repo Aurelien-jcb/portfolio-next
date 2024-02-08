@@ -10,7 +10,7 @@ const AboutSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   return (
     <section className={styles.wrapper}>
-      <Profil sectionRef={sectionRef}></Profil>
+      <Profil sectionRef={sectionRef} />
       <ScrollToNextSectionIcon />
       {/* <ScrollSection> */}
       <Description sectionRef={sectionRef}></Description>

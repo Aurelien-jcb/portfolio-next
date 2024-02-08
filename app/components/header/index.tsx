@@ -18,10 +18,7 @@ const Header = () => {
   const nameInitials = useGetInitials(siteInformations.name);
 
   return (
-    <header
-      className={styles.header}
-      // className={`${styles.header} ${userIsScrolling ? styles.border : null}`}
-    >
+    <header className={styles.header}>
       <div className={styles.logo}>
         <Link href="/">
           {userIsScrolling ? nameInitials : siteInformations.name}
