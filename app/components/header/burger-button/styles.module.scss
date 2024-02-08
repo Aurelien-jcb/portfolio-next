@@ -32,7 +32,7 @@
     stroke-dasharray: 60 207;
     stroke-width: 6;
   }
-  @include respond-to(xl, min) {
+  @include respond-to(md, min) {
     display: none;
   }
 }

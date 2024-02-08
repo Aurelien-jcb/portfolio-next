@@ -1,6 +1,6 @@
+import { NavLink } from "@/app/lib/definitions";
 import Link from "next/link";
 import styles from "./styles.module.scss";
-import { NavLink } from "@/app/lib/definitions";
 
 interface NavLinksProps {
   links: NavLink[];
@@ -20,6 +20,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, status }) => {
         <ul key={"nav-links"}>
           {links.map(({ id, url, label }) => (
             <li key={id}>
+              <span>{`0${id}.`}</span>
               <Link href={url} passHref>
                 {label}
               </Link>
