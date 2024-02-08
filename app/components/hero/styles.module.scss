@@ -3,21 +3,59 @@
 .hero {
   color: $accent-color;
   text-transform: uppercase;
-  min-height: 85vh;
+  min-height: 80dvh;
   position: relative;
-
-  @include flex-end-column-center-start;
-  h1 {
-    max-width: 748px;
+  display: flex;
+  flex-direction: column-reverse;
+  .wrapper {
+    @include flex-end-column-center-start;
   }
-  .icon {
+
+  h1 {
+    font-size: 2.7rem;
+    line-height: 33px;
+    padding-top: 90px;
+  }
+
+  .chevronIcon {
+    bottom: -22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .chevronIcon,
+  .fillStar {
     position: absolute;
-    top: 40px;
-    right: -80px;
+  }
+
+  .fillStar {
+    top: 20px;
+    right: -30px;
+  }
+
+  .glass {
+    width: 290px;
+    height: auto;
+    margin-top: 40px;
   }
 
   @include respond-to(md, min) {
-    min-height: 100vh;
-    justify-content: center;
+    min-height: 90dvh;
+    @include flex-row-center;
+    h1 {
+      font-size: 6rem;
+      line-height: 67px;
+      max-width: 748px;
+    }
+    justify-content: space-between;
+    .fillStar {
+      right: -80px;
+    }
+    .chevronIcon {
+      bottom: 0;
+    }
+    .glass {
+      width: 400px;
+      height: auto;
+    }
   }
 }
