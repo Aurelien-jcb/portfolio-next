@@ -9,7 +9,6 @@
     top: 0;
     right: 0;
     bottom: 0;
-    padding: 50px 0 0 0;
     background-color: $accent-color;
     transition: all 0.3s linear;
     text-transform: uppercase;
@@ -40,7 +39,6 @@
       transform: translate(0%);
       box-shadow: none;
       position: relative;
-      padding: 0;
       background-color: transparent;
       ul {
         @include flex-row-center;
