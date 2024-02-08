@@ -15,11 +15,12 @@
     transform: translate(100%);
     z-index: 5;
     ul {
+      height: 100%;
       list-style: none;
       @include flex-column-center;
       li {
-        margin-top: 10rem;
-        font-size: 2rem;
+        margin-top: 4rem;
+        font-size: 1.8rem;
         color: $secondary-color;
       }
       span {
