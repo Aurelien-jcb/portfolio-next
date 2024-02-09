@@ -1,8 +1,8 @@
 @import "@/app/styles/main";
 
-.wrapper {
-  height: 100vh;
-  padding: 100px;
+.about {
+  margin-top: 100px;
+  min-height: 100dvh;
   color: $accent-color;
   @include respond-to(lg, min) {
     padding: 20px 0;

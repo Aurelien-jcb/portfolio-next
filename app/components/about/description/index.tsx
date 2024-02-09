@@ -1,6 +1,7 @@
 "use client";
 import { about } from "@/app/lib/data";
 import { coiny, klavikaLight } from "@/app/lib/fonts";
+import { ScrollToNextSectionIcon } from "../../shared/scroll-to-next-section-icon";
 import styles from "./styles.module.scss";
 
 export function Description({
@@ -23,6 +24,7 @@ export function Description({
           <span key={index}>{text}</span>
         ))}
       </p>
+      <ScrollToNextSectionIcon />
     </div>
   );
 }

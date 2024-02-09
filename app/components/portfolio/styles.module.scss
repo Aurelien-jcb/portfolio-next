@@ -212,18 +212,22 @@
   height: 100dvh;
   width: 100%;
   position: relative;
-
   .star,
   .chevron {
     position: absolute;
   }
   .star {
     left: -100px;
-    bottom: 61px;
+    bottom: -90px;
   }
   .chevron {
     transform: rotate(270deg);
     bottom: 30px;
     right: 10px;
+  }
+  @include respond-to(lg, min) {
+    .star {
+      bottom: 61px;
+    }
   }
 }

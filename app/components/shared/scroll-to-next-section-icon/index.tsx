@@ -5,10 +5,10 @@ import styles from "./styles.module.scss";
 export function ScrollToNextSectionIcon() {
   return (
     <Image
-      className={styles.icon}
+      className={styles.chevronIcon}
       src={chevronIcon}
-      alt="Icon"
-      width={57}
+      alt="Bottom chevron icon"
+      width={56}
       height={40}
     />
   );

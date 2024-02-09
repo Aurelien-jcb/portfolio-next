@@ -1,14 +1,9 @@
 import glassElement from "@/app/lib/assets/images/hero-glass.png";
 import { klavikaBold, klavikaLight } from "@/app/lib/fonts";
-import {
-  chevronIcon,
-  fillStarIcon,
-  instagramIcon,
-  linkedinIcon,
-} from "@/app/lib/icons";
+import { chevronIcon, fillStarIcon } from "@/app/lib/icons";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./styles.module.scss";
+
 export const Hero = () => {
   return (
     <div className={styles.hero}>
@@ -40,25 +35,6 @@ export const Hero = () => {
         width={126}
         height={126}
       />
-      <div className={styles.socialIcon}>
-        <Link href="https://www.instagram.com">
-          <Image
-            src={instagramIcon}
-            className={styles.instagramIcon}
-            alt="Instagram icon"
-            width={38}
-            height={38}
-          />
-        </Link>
-        <Link href="https://www.linkedin.com/in/aurélien-jacob/">
-          <Image
-            src={linkedinIcon}
-            alt="Linkedin icon"
-            width={38}
-            height={38}
-          />
-        </Link>
-      </div>
     </div>
   );
 };

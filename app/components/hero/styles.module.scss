@@ -28,6 +28,7 @@
   }
 
   .fillStar {
+    z-index: -1;
     top: 20px;
     right: -30px;
   }
@@ -37,13 +38,7 @@
     height: auto;
     margin-top: 40px;
   }
-  .socialIcon {
-    position: fixed;
-    bottom: 34px;
-    .instagramIcon {
-      margin-right: 10px;
-    }
-  }
+
   @include respond-to(md, min) {
     .glass {
       width: 80%;

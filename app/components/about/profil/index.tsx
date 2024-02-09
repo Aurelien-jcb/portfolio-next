@@ -1,7 +1,6 @@
 "use client";
 import { about } from "@/app/lib/data";
 import { klavikaBold, klavikaLight } from "@/app/lib/fonts";
-import { roundedFlower } from "@/app/lib/icons";
 import Image from "next/image";
 import Button from "../../shared/button";
 import styles from "./styles.module.scss";
@@ -12,7 +11,7 @@ export function Profil({
   sectionRef: React.RefObject<HTMLElement>;
 }) {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.profil}>
       <div className={styles.description}>
         <p className={klavikaBold.className}>Hello!</p>
         <h3 className={klavikaLight.className}>
@@ -23,13 +22,13 @@ export function Profil({
         {/* <h3 className={klavikaMedium.className}>{about.title}</h3> */}
         <Button scrollToRef={sectionRef}>{about.cta.label}</Button>
       </div>
-      <Image
+      {/* <Image
         className={styles.roundedFlower}
         src={roundedFlower}
         alt="RoundedFlower Image"
         width={266}
         height={266}
-      />
+      /> */}
       <div className={styles.pictureWrapper}>
         <Image
           className={styles.picture}
