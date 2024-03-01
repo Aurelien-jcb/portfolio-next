@@ -22,7 +22,7 @@ export const projects = [
     type: "Website",
     stack: ["Wordpress", "Figma"],
     thumbnail: {
-      url: "/image.jpg",
+      url: "/images/projets/atelier_bunus.png",
       alt: "Image de miniature",
     },
     images: [
@@ -52,7 +52,7 @@ export const projects = [
     type: "Website",
     stack: ["Wordpress", "Figma"],
     thumbnail: {
-      url: "/image.jpg",
+      url: "/images/projets/gtb_conseils.png",
       alt: "Image de miniature",
     },
     images: [
@@ -67,7 +67,7 @@ export const projects = [
     type: "Website",
     stack: ["Wordpress", "Figma"],
     thumbnail: {
-      url: "/image.jpg",
+      url: "/images/projets/luma_coiffstyle.png",
       alt: "Image de miniature",
     },
     images: [
@@ -82,7 +82,7 @@ export const projects = [
     type: "Website",
     stack: ["Wordpress", "Figma"],
     thumbnail: {
-      url: "/image.jpg",
+      url: "/images/projets/transports_daurat.jpg",
       alt: "Image de miniature",
     },
     images: [

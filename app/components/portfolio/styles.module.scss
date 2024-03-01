@@ -209,15 +209,14 @@
 
 .portfolio {
   @include flex-center;
-  height: 100dvh;
-  width: 100%;
+  width: 80dvw;
   position: relative;
   .star,
   .chevron {
     position: absolute;
   }
   .star {
-    left: -100px;
+    left: -10px;
     bottom: -90px;
   }
   .chevron {
@@ -230,4 +229,73 @@
       bottom: 61px;
     }
   }
+}
+.projets {
+  width: 75%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projet {
+  border-radius: 30px;
+  margin: 50px 0;
+  width: 350px;
+  min-height: 60%;
+  background-position: right;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  & p {
+    padding: 0 0 20px 20px;
+    font-size: 1rem;
+  }
+}
+
+.projet:nth-child(1) {
+  height: 80%;
+}
+
+.projet:nth-child(3) {
+  height: 70%;
+}
+
+.projet:last-child {
+  height: 90%;
+  background-position: right;
+}
+
+.projet:nth-child(2) {
+  height: 73%;
+  display: flex;
+  width: 4OOpx;
+  flex-direction: column;
+  justify-content: space-between;
+  & div {
+    border-radius: 30px;
+    width: 300px;
+    height: 245px;
+    &:first-child {
+      background: green;
+    }
+    &:nth-child(2) {
+      background: purple;
+      margin: 40px 0 0 100px;
+    }
+  }
+}
+
+.projet:nth-child(1),
+.projet:nth-child(5) {
+  align-self: flex-start;
+}
+
+.projet:nth-child(3) {
+  align-self: flex-end;
+}
+
+.projet:nth-child(2),
+.projet:nth-child(4) {
+  align-self: center;
 }
