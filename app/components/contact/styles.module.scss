@@ -1,0 +1,26 @@
+.contactWrapper {
+  position: relative;
+  height: 100dvh;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  .contactGlass {
+    position: absolute;
+    top: 70px;
+    left: -200px;
+    width: 30%;
+    height: auto;
+  }
+  .contactIcon {
+    position: absolute;
+    bottom: 30px;
+    right: -70px;
+  }
+  button {
+    text-transform: uppercase;
+    color: #fff !important;
+  }
+}
