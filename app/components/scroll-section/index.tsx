@@ -7,32 +7,33 @@ import styles from "./styles.module.scss";
 function ScrollSection({ children }: { children: React.ReactNode }) {
   const sectionRef = useRef(null);
   const triggerRef = useRef(null);
-
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    const pin = gsap.fromTo(
-      sectionRef.current,
-      {
-        translateX: 0,
-      },
-      {
-        translateX: "-200vw",
-        ease: "none",
-        duration: 2,
-        scrollTrigger: {
-          trigger: triggerRef.current,
-          start: "top top",
-          end: "2000 top",
-          scrub: 0.6,
-          pin: true,
-          markers: true,
+    if (sectionRef.current) {
+      const pin = gsap.fromTo(
+        sectionRef.current,
+        {
+          translateX: 0,
         },
-      }
-    );
-    return () => {
-      pin.kill();
-    };
+        {
+          translateX: "-280vw",
+          ease: "none",
+          duration: 0.5,
+          scrollTrigger: {
+            horizontal: true,
+            trigger: triggerRef.current,
+            start: "top top",
+            end: "25000 top",
+            pin: true,
+            markers: false,
+          },
+        }
+      );
+      return () => {
+        pin.kill();
+      };
+    }
   }, []);
 
   return (
